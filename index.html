@@ -46,7 +46,7 @@
           <div class="main-header-space"></div>
         </div>
          <!-- message alert --> 
-        <div class="alert" id="alert"></div>
+        <div class="alert-banner" id="alert"></div>
          <!-- traffic section --> 
         <section id="traffic">
           <div class="traffic-header">
@@ -61,23 +61,23 @@
           <!-- main traffic chart -->
           <div class="widget-container-full">
             <canvas id="traffic-chart"></canvas>
-          </div>
-        </section>
-          <!-- daily traffic chart -->
-          <section class="daily-traffic">
-            <h2>DAILY TRAFFIC</h2>
-            <div class="widget-container-half">             
-            <canvas id="daily-chart"></canvas>
+          </div>       
+          <div class="daily-mobile">
+            <!-- daily traffic chart -->
+            <div class="widget-container-half">          
+              <div class="daily-traffic"> 
+                <h2>DAILY TRAFFIC</h2>       
+                <canvas id="daily-chart"></canvas>
+              </div>
             </div>
-        </section>
-        <!-- user type chart -->
-        <section class="user-type">
-          <div class="mobile-users">
-            <h2>MOBILE USERS</h2>
-            <div class="widget-container-half">
-              <canvas id="mobileUsersChart"></canvas>
+            <!-- user type chart -->
+            <div class="widget-container-half"> 
+              <div class="mobile-users">
+                <h2>MOBILE USERS</h2>
+                <canvas id="mobile-users-chart"></canvas>
+              </div>
             </div>
-          </div>
+          </div>  
         </section>
         <!-- social media stats -->
         <section id="socialStats">
@@ -94,6 +94,8 @@
               <p class="platform">Facebook</p>
               <p class="stats">10,320</p>
               </div>
+              <div class="soc-space">
+              </div>
             </div>
             <div class="social-chart">
               <div class="social-image">
@@ -104,6 +106,8 @@
               <div class="social-text">
               <p class="platform">Instagram</p>
               <p class="stats">16,445</p>
+              </div>
+              <div class="soc-space">
               </div>
             </div>
             <div class="social-chart">
@@ -116,75 +120,78 @@
               <p class="platform">Twitter</p>
               <p class="stats">22,189</p>
               </div>
+              <div class="soc-space">
+              </div>
             </div>
           </div>
         </section>
+
         <!-- social media members -->
         <section id="social-members">
-          <h2 class="newMembers">NEW MEMBERS</h2>
-          <div class="new-members">
+          <div class= "member-section">
             
-            <div class="member">
-              <div class="member-id">
-                <div class="member-photo">
-                  <img src="images/member-1.jpg" alt="image of victoria chambers">
-                </div>  
-                <div class="member-text">
-                  <h3 class="mem-name">Victoria Chambers</h3>
-                  <p class="mem-email">victoria.chambers80@example.com</p>                
-                </div>               
+            <div class="new-members">
+              <h2 class="newMembers">NEW MEMBERS</h2>
+              <div class="member">
+                <div class="member-id">
+                  <div class="member-photo">
+                    <img src="images/member-1.jpg" alt="image of victoria chambers">
+                  </div>  
+                  <div class="member-text">
+                    <h3 class="mem-name">Victoria Chambers</h3>
+                    <p class="mem-email">victoria.chambers80@example.com</p>                
+                  </div>               
+                </div>
+               <div class="join-date">             
+                  <p class="mem-date">10/15/20</p> 
+                </div>              
               </div>
-              <div class="join-date">             
-                <p class="mem-date">10/15/20</p> 
-              </div>              
-            </div>
-            <div class="member">
-              <div class="member-id">
-                <div class="member-photo">
-                  <img src="images/member-2.jpg" alt="image of dale byrd">
-                </div>  
-                <div class="member-text">
-                  <h3 class="mem-name">Dale Byrd</h3>
-                  <p class="mem-email">dale.byrd52@example.com</p>                
-                </div>               
+              <div class="member">
+                <div class="member-id">
+                  <div class="member-photo">
+                    <img src="images/member-2.jpg" alt="image of dale byrd">
+                  </div>  
+                  <div class="member-text">
+                    <h3 class="mem-name">Dale Byrd</h3>
+                    <p class="mem-email">dale.byrd52@example.com</p>                
+                  </div>               
+                </div>
+                <div class="join-date">             
+                  <p class="mem-date">10/15/20</p> 
+                </div>              
               </div>
-              <div class="join-date">             
-                <p class="mem-date">10/15/20</p> 
-              </div>              
-            </div>
-            <div class="member">
-              <div class="member-id">
-                <div class="member-photo">
-                  <img src="images/member-3.jpg" alt="image of dawn wood">
-                </div>  
-                <div class="member-text">
-                  <h3 class="mem-name">Dawn Wood</h3>
-                  <p class="mem-email">dawn.wood16@example.com</p>                
-                </div>               
+              <div class="member">
+                <div class="member-id">
+                  <div class="member-photo">
+                    <img src="images/member-3.jpg" alt="image of dawn wood">
+                  </div>  
+                  <div class="member-text">
+                    <h3 class="mem-name">Dawn Wood</h3>
+                    <p class="mem-email">dawn.wood16@example.com</p>                
+                  </div>               
+                </div>
+                <div class="join-date">             
+                  <p class="mem-date">10/15/20</p> 
+                </div>              
               </div>
-              <div class="join-date">             
-                <p class="mem-date">10/15/20</p> 
-              </div>              
-            </div>
-            <div class="member">
-              <div class="member-id">
-                <div class="member-photo">
-                  <img src="images/member-4.jpg" alt="image of dan oliver">
-                </div>  
-                <div class="member-text">
-                  <h3 class="mem-name">Dan Oliver</h3>
-                  <p class="mem-email">dan.oliver82@example.com</p>                
-                </div>               
+              <div class="member">
+                <div class="member-id">
+                  <div class="member-photo">
+                    <img src="images/member-4.jpg" alt="image of dan oliver">
+                  </div>  
+                  <div class="member-text">
+                    <h3 class="mem-name">Dan Oliver</h3>
+                    <p class="mem-email">dan.oliver82@example.com</p>                
+                  </div>               
+                </div>
+                <div class="join-date">             
+                  <p class="mem-date">10/15/20</p> 
+                </div>              
               </div>
-              <div class="join-date">             
-                <p class="mem-date">10/15/20</p> 
-              </div>              
-            </div>
-          </div>
-         <section id="recent-activity">
-          <h2 class="newMembers">RECENT ACTIVITY</h2>
-          <div class="recent-activity">
-            
+           </div>
+          
+           <div class="recent-activity">
+            <h2 class="newMembers">RECENT ACTIVITY</h2>
             <div class="member">
               <div class="member-id">
                 <div class="member-photo">
@@ -243,148 +250,154 @@
             </div>
             
             
-          </div>
-         </section>
-        </section>
-        <!-- user messaging -->
-        <section id="messaging">
-          <div class="message">
-            <h2 class="message-user">MESSAGE USER</h2>
-            <div class="user-search">
-              <fieldset>
-                <input id="search" placeholder="Search for User" type="text"  name="user_name" required>
-              </fieldset>
-              <fieldset>
-                <textarea id="message" placeholder="Message for User" name="user_message"></textarea>
-              </fieldset>
-              <button type="submit" id="send" >SEND</button>
             </div>
-            
+          
           </div>
         </section>
-        <!-- settings -->
-        <section id="settings">          
-          <h2>SETTINGS</h2>
-          <div class="settings"> 
-           <div id='switches'>
-              <div class="email">
-                <h3>Send Email Notifications</h3>
-                <div class="toggle">
-                  <label class="switch-ios switch-light" onclick="">
-                    <input type="checkbox">
-                    <span>
-                      <span>Off</span>
-                      <span>On</span>
-                      <a></a>
-                    </span>
-                  </label>
-                </div>
+            <!-- user messaging -->
+        <div class="message-settings">
+          <div class="message">
+           <section id="messaging">
+              <h2 class="message-user">MESSAGE USER</h2>
+              <div class="user-search">
+                <fieldset>
+                  <input id="search" placeholder="Search for User" type="text"  name="user_name" required>
+                </fieldset>
+                <fieldset>
+                  <textarea id="message" placeholder="Message for User" name="user_message"></textarea>
+                </fieldset>
+                <button type="submit" id="send" >SEND</button>
               </div>
-              <div class="profile">
-                <h3>Set Profile to Public</h3>
-                <div class="toggle2">
-                  <label class="switch-ios switch-light" onclick="">
-                    <input type="checkbox">
-                    <span>
-                      <span>Off</span>
-                      <span>On</span>
-                      <a></a>
-                    </span>
-                  </label>
-                </div>
-              </div>
-           </div>
-           <select id="timezone" name="user_timezone" class="timezones">
-            <option id="time" value="none">Select Timezone</option>
-            <option value="-12">(GMT-12:00) International Date Line West</option>
-              	<option value="-11">(GMT-11:00) Midway Island, Samoa</option>
-              	<option value="-10">(GMT-10:00) Hawaii</option>
-              	<option value="-9">(GMT-09:00) Alaska</option>
-              	<option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
-              	<option value="-8">(GMT-08:00) Tijuana, Baja California</option>
-              	<option value="-7">(GMT-07:00) Arizona</option>
-              	<option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
-              	<option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
-              	<option value="-6">(GMT-06:00) Central America</option>
-              	<option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
-              	<option value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
-              	<option value="-6">(GMT-06:00) Saskatchewan</option>
-              	<option value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
-              	<option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
-              	<option value="-5">(GMT-05:00) Indiana (East)</option>
-              	<option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
-              	<option value="-4">(GMT-04:00) Caracas, La Paz</option>
-              	<option value="-4">(GMT-04:00) Manaus</option>
-              	<option value="-4">(GMT-04:00) Santiago</option>
-              	<option value="-3.5">(GMT-03:30) Newfoundland</option>
-              	<option value="-3">(GMT-03:00) Brasilia</option>
-              	<option value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
-              	<option value="-3">(GMT-03:00) Greenland</option>
-              	<option value="-3">(GMT-03:00) Montevideo</option>
-              	<option value="-2">(GMT-02:00) Mid-Atlantic</option>
-              	<option value="-1">(GMT-01:00) Cape Verde Is.</option>
-              	<option value="-1">(GMT-01:00) Azores</option>
-              	<option value="0">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
-              	<option value="0">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
-              	<option value="1">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
-              	<option value="1">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
-              	<option value="1">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
-              	<option value="1">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
-              	<option value="1">(GMT+01:00) West Central Africa</option>
-              	<option value="2">(GMT+02:00) Amman</option>
-              	<option value="2">(GMT+02:00) Athens, Bucharest, Istanbul</option>
-              	<option value="2">(GMT+02:00) Beirut</option>
-              	<option value="2">(GMT+02:00) Cairo</option>
-              	<option value="2">(GMT+02:00) Harare, Pretoria</option>
-              	<option value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
-              	<option value="2">(GMT+02:00) Jerusalem</option>
-              	<option value="2">(GMT+02:00) Minsk</option>
-              	<option value="2">(GMT+02:00) Windhoek</option>
-              	<option value="3">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
-              	<option value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
-              	<option value="3">(GMT+03:00) Nairobi</option>
-              	<option value="3">(GMT+03:00) Tbilisi</option>
-              	<option value="3.5">(GMT+03:30) Tehran</option>
-              	<option value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
-              	<option value="4">(GMT+04:00) Baku</option>
-              	<option value="4">(GMT+04:00) Yerevan</option>
-              	<option value="4.5">(GMT+04:30) Kabul</option>
-              	<option value="5">(GMT+05:00) Yekaterinburg</option>
-              	<option value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
-              	<option value="5.5">(GMT+05:30) Sri Jayawardenapura</option>
-              	<option value="5.5">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
-              	<option value="5.75">(GMT+05:45) Kathmandu</option>
-              	<option value="6">(GMT+06:00) Almaty, Novosibirsk</option>
-              	<option value="6">(GMT+06:00) Astana, Dhaka</option>
-              	<option value="6.5">(GMT+06:30) Yangon (Rangoon)</option>
-              	<option value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
-              	<option value="7">(GMT+07:00) Krasnoyarsk</option>
-              	<option value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
-              	<option value="8">(GMT+08:00) Kuala Lumpur, Singapore</option>
-              	<option value="8">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
-              	<option value="8">(GMT+08:00) Perth</option>
-              	<option value="8">(GMT+08:00) Taipei</option>
-              	<option value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
-              	<option value="9">(GMT+09:00) Seoul</option>
-              	<option value="9">(GMT+09:00) Yakutsk</option>
-              	<option value="9.5">(GMT+09:30) Adelaide</option>
-              	<option value="9.5">(GMT+09:30) Darwin</option>
-              	<option value="10">(GMT+10:00) Brisbane</option>
-              	<option value="10">(GMT+10:00) Canberra, Melbourne, Sydney</option>
-              	<option value="10">(GMT+10:00) Hobart</option>
-              	<option value="10">(GMT+10:00) Guam, Port Moresby</option>
-              	<option value="10">(GMT+10:00) Vladivostok</option>
-              	<option value="11">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
-              	<option value="12">(GMT+12:00) Auckland, Wellington</option>
-              	<option value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
-              	<option value="13">(GMT+13:00) Nuku'alofa</option>
-              </select>
-           <div class="buttons">
-            <button class="settings-save" name="settings-save" type="submit">SAVE</button>
-            <button class="settings-cancel" name="settings-cancel" type="button">CANCEL</button>
-           </div>
+            </section>
           </div>
-        </section>
+        
+          <!-- settings -->
+
+           
+          <div class="settings">  
+           <section id="settings"> 
+            <h2>SETTINGS</h2>
+             
+            <div id='switches'>
+                <div class="email">
+                  <h3>Send Email Notifications</h3>
+                  <div class="toggle">
+                    <label class="switch-ios switch-light" onclick="">
+                      <input type="checkbox">
+                      <span>
+                        <span>Off</span>
+                        <span>On</span>
+                        <a></a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="profile">
+                  <h3>Set Profile to Public</h3>
+                  <div class="toggle2">
+                    <label class="switch-ios switch-light" onclick="">
+                      <input type="checkbox">
+                      <span>
+                        <span>Off</span>
+                        <span>On</span>
+                        <a></a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+             </div>
+             <select id="timezone" name="user_timezone" class="timezones">
+              <option id="time" value="none">Select Timezone</option>
+              <option value="-12">(GMT-12:00) International Date Line West</option>
+                  <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
+                  <option value="-10">(GMT-10:00) Hawaii</option>
+                  <option value="-9">(GMT-09:00) Alaska</option>
+                  <option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+                  <option value="-8">(GMT-08:00) Tijuana, Baja California</option>
+                  <option value="-7">(GMT-07:00) Arizona</option>
+                  <option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                  <option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+                  <option value="-6">(GMT-06:00) Central America</option>
+                  <option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+                  <option value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                  <option value="-6">(GMT-06:00) Saskatchewan</option>
+                  <option value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                  <option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+                  <option value="-5">(GMT-05:00) Indiana (East)</option>
+                  <option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+                  <option value="-4">(GMT-04:00) Caracas, La Paz</option>
+                  <option value="-4">(GMT-04:00) Manaus</option>
+                  <option value="-4">(GMT-04:00) Santiago</option>
+                  <option value="-3.5">(GMT-03:30) Newfoundland</option>
+                  <option value="-3">(GMT-03:00) Brasilia</option>
+                  <option value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
+                  <option value="-3">(GMT-03:00) Greenland</option>
+                  <option value="-3">(GMT-03:00) Montevideo</option>
+                  <option value="-2">(GMT-02:00) Mid-Atlantic</option>
+                  <option value="-1">(GMT-01:00) Cape Verde Is.</option>
+                  <option value="-1">(GMT-01:00) Azores</option>
+                  <option value="0">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                  <option value="0">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                  <option value="1">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                  <option value="1">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                  <option value="1">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                  <option value="1">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                  <option value="1">(GMT+01:00) West Central Africa</option>
+                  <option value="2">(GMT+02:00) Amman</option>
+                  <option value="2">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                  <option value="2">(GMT+02:00) Beirut</option>
+                  <option value="2">(GMT+02:00) Cairo</option>
+                  <option value="2">(GMT+02:00) Harare, Pretoria</option>
+                  <option value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                  <option value="2">(GMT+02:00) Jerusalem</option>
+                  <option value="2">(GMT+02:00) Minsk</option>
+                  <option value="2">(GMT+02:00) Windhoek</option>
+                  <option value="3">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                  <option value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                  <option value="3">(GMT+03:00) Nairobi</option>
+                  <option value="3">(GMT+03:00) Tbilisi</option>
+                  <option value="3.5">(GMT+03:30) Tehran</option>
+                  <option value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
+                  <option value="4">(GMT+04:00) Baku</option>
+                  <option value="4">(GMT+04:00) Yerevan</option>
+                  <option value="4.5">(GMT+04:30) Kabul</option>
+                  <option value="5">(GMT+05:00) Yekaterinburg</option>
+                  <option value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                  <option value="5.5">(GMT+05:30) Sri Jayawardenapura</option>
+                  <option value="5.5">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                  <option value="5.75">(GMT+05:45) Kathmandu</option>
+                  <option value="6">(GMT+06:00) Almaty, Novosibirsk</option>
+                  <option value="6">(GMT+06:00) Astana, Dhaka</option>
+                  <option value="6.5">(GMT+06:30) Yangon (Rangoon)</option>
+                  <option value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                  <option value="7">(GMT+07:00) Krasnoyarsk</option>
+                  <option value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                  <option value="8">(GMT+08:00) Kuala Lumpur, Singapore</option>
+                  <option value="8">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                  <option value="8">(GMT+08:00) Perth</option>
+                  <option value="8">(GMT+08:00) Taipei</option>
+                  <option value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                  <option value="9">(GMT+09:00) Seoul</option>
+                  <option value="9">(GMT+09:00) Yakutsk</option>
+                  <option value="9.5">(GMT+09:30) Adelaide</option>
+                  <option value="9.5">(GMT+09:30) Darwin</option>
+                  <option value="10">(GMT+10:00) Brisbane</option>
+                  <option value="10">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                  <option value="10">(GMT+10:00) Hobart</option>
+                  <option value="10">(GMT+10:00) Guam, Port Moresby</option>
+                  <option value="10">(GMT+10:00) Vladivostok</option>
+                  <option value="11">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                  <option value="12">(GMT+12:00) Auckland, Wellington</option>
+                  <option value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                  <option value="13">(GMT+13:00) Nuku'alofa</option>
+                </select>
+            <div class="buttons">
+              <button class="settings-save" name="settings-save" type="submit">SAVE</button>
+              <button class="settings-cancel" name="settings-cancel" type="button">CANCEL</button>
+            </div>         
+           </section>
+          </div>
+        </div>
       </main>
    </div>
    <!-- scripts -->

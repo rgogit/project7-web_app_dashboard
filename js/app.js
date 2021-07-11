@@ -2,8 +2,8 @@
 const alertBanner = document.getElementById("alert");
 alertBanner.innerHTML =
 `<div class="alert-banner">
-<p><strong>Alert:</strong> You have unread messages</p>
-<p class="alert-banner-close"><strong> x </strong></p>
+<p class="alert"><strong>Alert: </strong>&nbsp;You have unread messages</p>
+<p class="alert-banner-close">X</p>
 </div>`
 alertBanner.addEventListener('click', e => {
     const element = e.target;
@@ -12,8 +12,7 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
-// messaging widget
-// ensure user and message fields are filled out
+// messaging widget ensure user and message fields are filled out
 
 const user = document.getElementById("search");
 const message = document.getElementById("message");
