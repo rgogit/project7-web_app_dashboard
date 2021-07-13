@@ -1,13 +1,8 @@
-/* * {border:
-     red 1px solid;
-}  */
-
 /*---base styles---*/
 
 html{
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box; 
-    width:100vw;
 }
 *, *:before, *:after {
     box-sizing: inherit;
