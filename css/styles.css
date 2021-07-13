@@ -15,7 +15,8 @@ html{
 body{
     font-size: 0.6em;
     letter-spacing: 0.09em;
-    margin: 0 auto; 
+    margin: 0 auto;
+    max-width: 1024px;
 }
 h2{
     padding-left: 1em;
@@ -626,21 +627,22 @@ select{
     }
     .widget-container-full,
     .widget-container-half{
-    width: 99%;
-    margin:auto;
+        margin:auto;
+        
     }
     .widget-container-half{
         padding:0;
+        border-bottom: none;
     }
     .daily-mobile{
         flex-direction: row;
-        margin:0 1em;
+        border-bottom:2px rgb(194, 194, 194) solid;
     }
     .mobile-users,
     .daily-traffic{
         margin:auto;
         padding-bottom: 1em;
-        width: 100%;
+        border-bottom:none;
     }
     .widget-container-half h2{
         padding-left: 1em;
@@ -652,6 +654,7 @@ select{
     .daily-traffic{
         border-right: 2px solid rgb(212, 212, 212);
         margin-right: .3em;
+        border-bottom:0px rgb(194, 194, 194) solid;
     }
     .social-stats{
         flex-direction: row;
@@ -665,6 +668,7 @@ select{
     .social-chart{
         justify-content: space-around;
         margin:.75em;
+        margin-bottom: 1.2em;
         width:32%;       
     }
     .soc-space{
@@ -683,6 +687,7 @@ select{
         align-items: center;
         width:96%;
         border-bottom: 2px solid rgb(212, 212, 212);
+        margin-top: 0em;
     }   
     .member-id{
         display: flex;
@@ -767,14 +772,14 @@ select{
         margin-right: .1em;
     }
     .new-members{
-        padding-right: 1em;
+        /* padding-right: 1em; */
         border-right: 2px solid rgb(212, 212, 212);
     }
     .message-settings{
         flex-direction: row;
     }
     .message-user{
-        padding-left:.6em;
+        padding-left:1em;
     }
     .message,
     .settings{
@@ -785,9 +790,13 @@ select{
         margin-right: 1em;
     }
     .user-search{
-        width:96%;
-        margin: 0em 1em;
-        margin-right: 0em;
+        /* width:96%; */
+        padding-left: .2em;
+        margin:auto;
+    }
+    .message{
+        border-right: 2px solid rgb(212, 212, 212);
+        border-bottom:none;
     }
     .settings{
         padding: 0em 1em;
@@ -797,5 +806,12 @@ select{
     }
     .toggle2{
         margin-left: 8em;
+    }
+    #timezone {
+        margin-top: 2.9em;
+        margin-bottom: 1.4em;
+    }
+    .buttons{
+        margin:0em;
     }
 }
