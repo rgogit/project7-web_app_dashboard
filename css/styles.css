@@ -1,6 +1,6 @@
-* {border:
+/* * {border:
      red 1px solid;
-} 
+}  */
 
 /*---base styles---*/
 
@@ -9,14 +9,10 @@ html{
     box-sizing: border-box; 
     width:100vw;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body{
-    width:100vw;
-    max-width: 1024px;
     font-size: 0.6em;
     letter-spacing: 0.09em;
     margin: 0 auto; 
@@ -24,17 +20,14 @@ body{
 h2{
     padding-left: 1em;
     font-size: 1.35em;
-}
-   
+}   
 button,
 fieldset{
     border-style: none;
 }
 
-
 /*---grid-setup---*/
 .wrapper{
-    width:100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px 65px auto;
@@ -43,7 +36,6 @@ fieldset{
         "nav"
         "main";
 }
-
 .header{
     grid-area: header;
     position: sticky;
@@ -53,9 +45,7 @@ fieldset{
     display: flex;
     align-items: center;
     justify-content: space-between;
- 
 }
-
 .nav {
     grid-area: nav;
     background-color: #595785;
@@ -63,14 +53,12 @@ fieldset{
     align-items: center;
     justify-content: space-evenly;
 }
-
 .main {
     grid-area: main;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
 }
-
 
 /*--header---*/
 .appName{
@@ -136,14 +124,12 @@ fieldset{
     margin-bottom: 12px;
     margin-right: .4em;
 }
-
 .user-account {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     border-left: 2px solid rgb(212, 212, 212);
-    margin-right: .8em;
-        
+    margin-right: .8em;      
 }
 .user-image {
     border-radius: 50%;
@@ -159,9 +145,7 @@ fieldset{
 }
 
 /*---navigation---*/
-.nav{
-    position: sticky;
-}
+
 .nav img{
     height: 60px;
     width: 30px;
@@ -172,13 +156,11 @@ fieldset{
     display: flex;
     flex-direction: column;   
 }
-
 .main-header{
     flex-direction: row;
     display: inline-flex;
     height:6em;
     width: 100%;
-
 }
 .headline{
     color: rgb(36, 36, 36);
@@ -186,18 +168,14 @@ fieldset{
     padding-left: .55em;
     padding-right: 1.2em;
     font-size: 1.7em;
-   
-    
-
 }
 .main-header-space{
-height: 4em;
-width:100%;
-background-color: rgb(241, 236, 236);
-border-left:2px rgb(194, 194, 194) solid;
-border-bottom:2px rgb(194, 194, 194) solid;
+    height: 4em;
+    width:100%;
+    background-color: rgb(241, 236, 236);
+    border-left:2px rgb(194, 194, 194) solid;
+    border-bottom:2px rgb(194, 194, 194) solid;
 }
-
 .alert{
     display: flex;
     justify-content: center;
@@ -220,19 +198,15 @@ border-bottom:2px rgb(194, 194, 194) solid;
     margin:auto;
     margin-right: .1em;
 }
-
 .alert-banner-close:hover{
     cursor: pointer;
 }
-
 .traffic-nav{
     list-style-type:none;
     display:flex;
     justify-content: space-between;
-    padding-right: 3em;
-    padding-left:2em;
-    margin-top: 1px;
-    margin-bottom:1px;
+    margin: 0;
+    padding:0;
 }
 .traffic-header{
     display:flex;
@@ -268,15 +242,12 @@ border-bottom:2px rgb(194, 194, 194) solid;
 .widget-container-full,
 .widget-container-half{
     border-bottom: 2px solid rgb(212, 212, 212);
-    width: 100%;
-    padding: 0em 1.2em;
     margin: auto;
 }
 .widget-container-half{
     display: flex;
     flex-direction: column;
-    padding-bottom: 3em;
-    
+    padding-bottom: 3em;  
 } 
 .widget-container-half h2{
     margin-bottom: 2em;
@@ -297,9 +268,10 @@ border-bottom:2px rgb(194, 194, 194) solid;
     margin:.3em 1.4em 1em;
 }
 .social-image{
+    display: flex;
     background-color:#7477bf;
-    height:5.9em;
-    width:5.9em;
+    height:6em;
+    width:6em;
     border-radius:50%;
     margin:2.2em 1.9em 2em;
 }
@@ -311,14 +283,18 @@ border-bottom:2px rgb(194, 194, 194) solid;
     font-size: 1.5em;
     font-weight:600;
     letter-spacing: 0.02em;
-    margin-top:2em;
-    margin-bottom:-.1em;
+    margin-top:1.8em;
+    margin-bottom: 0em;
+  
 }
 .stats{
     color: rgb(150, 146, 146);
-    font-size: 3.5em;
+    font-size: 3.2em;
     margin-top:.01em;
-    margin-bottom: auto;
+    margin: auto;
+}
+.soc-space{
+    width:25%;
 }
 
 /*---members section---*/
@@ -327,6 +303,7 @@ border-bottom:2px rgb(194, 194, 194) solid;
     flex-direction: column;
 }
 /*---new members---*/
+
 .new-members,
 .recent-activity{
     border-bottom: 2px solid rgb(212, 212, 212);
@@ -392,7 +369,6 @@ border-bottom:2px rgb(194, 194, 194) solid;
     font-weight: 600;
 }
 
-
 /*---members activity section---*/
 .rangle{
     font-size: 0em;
@@ -432,7 +408,6 @@ fieldset{
     padding-left: 1em;
     margin: 0em;
     font-size: 1.5em;
-    /* padding-top: .25em; */
 }
 
 input[type="text"],
@@ -462,6 +437,7 @@ textarea{
     padding: 0em;
     letter-spacing:.1em;
 }
+
 /*---settings---*/
 .settings h2{
     padding-left: 0em;
@@ -485,12 +461,12 @@ textarea{
 .toggle2{
     margin-left:9.4em;
 }
-/* iOS Theme light switch */
 
+/* iOS Theme light switch */
 .switch-ios.switch-light span span {
     color: #888b92;
- }
-  .switch-ios.switch-light a {
+}
+.switch-ios.switch-light a {
     left: 0;
     top: .16em;
     width: 1.65em;
@@ -498,16 +474,18 @@ textarea{
     background-color: #fff;
     border-radius: 100%;
     border: 0.2em solid rgb(212, 212, 212);
-    transition: all .2s ease-out; }
-  .switch-ios.switch-light > span {
+    transition: all .2s ease-out;
+}
+.switch-ios.switch-light > span {
     display: block;
     width: 100%;
     height: 2.4em;
     background-color: #D8D9DB;
     border:.2em solid rgb(182, 182, 182); ;
     border-radius: 1.75em;
-    transition: all .4s ease-out; }
-  .switch-ios.switch-light > span span {
+    transition: all .4s ease-out;
+}
+.switch-ios.switch-light > span span {
     position: absolute;
     top: 0;
     left: 0;
@@ -515,40 +493,51 @@ textarea{
     opacity: 0;
     line-height: 1.875em;
     vertical-align: middle;
-    transition: all .2s ease-out; }
-    .switch-ios.switch-light > span span:first-of-type {
-      opacity: 1;
-      padding-left: 1.875em; }
-    .switch-ios.switch-light > span span:last-of-type {
-      padding-right: 1.875em; }
-  .switch-ios.switch-light input:checked ~ span a {
+    transition: all .2s ease-out;
+}
+.switch-ios.switch-light > span span:first-of-type {
+    opacity: 1;
+    padding-left: 1.875em;
+}
+.switch-ios.switch-light > span span:last-of-type {
+    padding-right: 1.875em;
+}
+.switch-ios.switch-light input:checked ~ span a {
     left: 100%;
     border-color: rgb(212, 212, 212);
-    margin-left: -2em; }
-  .switch-ios.switch-light input:checked ~ span {
+    margin-left: -2em;
+}
+.switch-ios.switch-light input:checked ~ span {
     border-color: rgb(212, 212, 212);
-    box-shadow: inset 0 0 0 30px #7477bf; }
-  .switch-ios.switch-light input:checked ~ span span:first-of-type {
-    opacity: 0; }
-  .switch-ios.switch-light input:checked ~ span span:last-of-type {
+    box-shadow: inset 0 0 0 30px #7477bf;
+}
+.switch-ios.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0;
+}
+.switch-ios.switch-light input:checked ~ span span:last-of-type {
     opacity: 1;
-    color: #fff; }
-  .switch-ios.switch-toggle {
+    color: #fff;
+}
+.switch-ios.switch-toggle {
     background-color: #D8D9DB;
     border-radius: 30px;
-    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0; }
-    .switch-ios.switch-toggle a {
-      background-color: #7477bf;
-      border: 0.125em solid rgb(212, 212, 212);
-      border-radius: 1.75em;
-      transition: all 0.12s ease-out; }
-    .switch-ios.switch-toggle label {
-      height: 2.5em;
-      color: #888b92;
-      line-height: 2.4em;
-      vertical-align: middle; }
-  .switch-ios input:checked + label {
-    color: #3e4043; }
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
+}
+.switch-ios.switch-toggle a {
+    background-color: #7477bf;
+    border: 0.125em solid rgb(212, 212, 212);
+    border-radius: 1.75em;
+    transition: all 0.12s ease-out;
+}
+.switch-ios.switch-toggle label {
+    height: 2.5em;
+    color: #888b92;
+    line-height: 2.4em;
+    vertical-align: middle;
+}
+.switch-ios input:checked + label {
+    color: #3e4043;
+}
      /* end iOS Theme light switch */
 
 select{
@@ -560,12 +549,9 @@ select{
     color: rgb(158, 156, 156);
     font-size:1.4em;
     padding: 0em;
-    /* letter-spacing:.1em; */
     border: 2px solid rgb(212, 212, 212);
-    padding-left: 1em;
-    
+    padding-left: 1em;   
 }
-
 .buttons{
     display: flex;
     justify-content: space-between;
@@ -590,7 +576,6 @@ select{
 
 /*---media queries---*/
 @media (min-width: 768px) {
-    
     .wrapper{
         grid-template-rows: 70px 1fr;
         grid-template-columns:9em 1fr;
@@ -611,8 +596,7 @@ select{
     p.alert-banner {
         color: white;
         font-size: 1.3em;
-        margin:0 auto;
-        
+        margin:0 auto;   
     }
     p.alert{
         margin-left:.1em;
@@ -621,8 +605,7 @@ select{
     .traffic-nav{
         margin-left: 50%;
         padding-right: 1em;
-    }
-    
+    }   
     .traffic-header{
         flex-direction: row;
         justify-content: space-between;
@@ -645,14 +628,14 @@ select{
     .widget-container-half{
     width: 99%;
     margin:auto;
-}
-.widget-container-half{
-    padding:0;
-}
-.daily-mobile{
-    flex-direction: row;
-    margin:0 1em;
-}
+    }
+    .widget-container-half{
+        padding:0;
+    }
+    .daily-mobile{
+        flex-direction: row;
+        margin:0 1em;
+    }
     .mobile-users,
     .daily-traffic{
         margin:auto;
@@ -672,41 +655,39 @@ select{
     }
     .social-stats{
         flex-direction: row;
+        justify-content: space-between;
         padding:0em .7em;
         margin:0em;
-        }
-        #socialStats h2{
-            margin-bottom: 0em;
-        }
+    }
+    #socialStats h2{
+        margin-bottom: 0em;
+    }
     .social-chart{
         justify-content: space-around;
         margin:.75em;
-        
+        width:32%;       
     }
     .soc-space{
-        width:10em;
+        width:4%;
     }
     .widget-container-half{
-    flex-direction: row;
-    } 
-    
-       
+        flex-direction: row;
+    }     
+    .newMembers{
+        margin-bottom: 0;
+    }   
     .member{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 1em;
-        margin-top: .8em;
-        margin-left: 1.75em;
-        margin-right: .1em;
-        width:97%;
+        width:96%;
         border-bottom: 2px solid rgb(212, 212, 212);
-    }
+    }   
     .member-id{
         display: flex;
         flex-direction: row;
-        margin: auto 0;
+        margin: 1em 0;
         align-items:center;
     }
     .member-photo{
@@ -756,18 +737,21 @@ select{
         margin:0;
         width:49%;
     }
-.toggle,
-.toggle2{
-    width: 8em;
-    margin-left: 10.2em;
-    padding-left: 1em;
-}
-.toggle2{
-    margin-left: 13em;
-}
+    .toggle,
+    .toggle2{
+        width: 8em;
+        margin-left: 3.2em;
+        padding-left: 1em;
+    }
+    .toggle2{
+        margin-left: 6em;
+    }
 }
 
 @media (min-width: 1024px) {
+    .soc-space{
+        width:3%;
+    }
     .member-section{
         flex-direction: row;
         flex-grow: 1;
@@ -780,7 +764,7 @@ select{
        width:50%;
     }
     .member-section{
-        margin-right: .5em;
+        margin-right: .1em;
     }
     .new-members{
         padding-right: 1em;
@@ -796,7 +780,6 @@ select{
     .settings{
         width: 50%;
         margin: 0;
-
     }
     .message-user h2{
         margin-right: 1em;
@@ -807,6 +790,12 @@ select{
         margin-right: 0em;
     }
     .settings{
-        padding: 0em 1.5em;
+        padding: 0em 1em;
+    }
+    .toggle{
+        margin-left: 5.2em;
+    }
+    .toggle2{
+        margin-left: 8em;
     }
 }
